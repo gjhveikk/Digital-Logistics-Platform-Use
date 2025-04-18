@@ -115,47 +115,70 @@
     </div>
   </section>
 
-  <!-- Signup Section -->
-  <section id="signup" class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-3xl font-bold mb-4">Start Your First Delivery</h2>
-        <form class="space-y-4">
-          <div>
-            <label for="email" class="block mb-1 font-medium">Email</label>
-            <input type="email" id="email" class="w-full border rounded px-3 py-2" placeholder="you@example.com" />
-          </div>
-          <div>
-            <label for="phone" class="block mb-1 font-medium">Phone</label>
-            <input type="tel" id="phone" class="w-full border rounded px-3 py-2" placeholder="+227 88 47 09 07" />
-          </div>
-          <button class="bg-blue-600 text-white px-5 py-3 rounded w-full font-semibold">Sign Up</button>
-        </form>
+  <!-- FAQ Section -->
+  <section id="faq" class="py-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+      <div class="space-y-6">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-xl mb-2">What is Digital Logistics?</h3>
+          <p>Digital Logistics is a smart logistics platform designed to simplify supply chain management, focusing on real-time tracking, modular features, and full visibility.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-xl mb-2">Who can use Digital Logistics?</h3>
+          <p>Our platform is ideal for businesses of all sizes, from local entrepreneurs to large global organizations seeking smarter logistics solutions.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-xl mb-2">How do I get started?</h3>
+          <p>You can easily sign up by filling out our registration form and start exploring all the features available to you!</p>
+        </div>
       </div>
-      <img src="delivery-illustration.png" alt="Delivery Illustration" class="w-full h-auto hidden md:block" />
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-200 py-6">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-      <p>&copy; 2025 Digital Logistics. All rights reserved.</p>
-      <div class="space-x-4 mt-4 md:mt-0">
-        <a href="#" class="hover:underline">Privacy</a>
-        <a href="#" class="hover:underline">Terms</a>
-        <a href="#" class="hover:underline">Contact</a>
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">What Our Users Say</h2>
+      <div class="space-y-6">
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <p class="italic">"Digital Logistics has transformed the way we handle our deliveries. We can track every shipment in real time, making our operations more efficient than ever!"</p>
+          <p class="font-semibold mt-4">John Doe</p>
+          <p>CEO, Tech Innovations</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <p class="italic">"The ease of use and the scalability of the platform allowed us to grow our logistics department without added stress. Highly recommend it!"</p>
+          <p class="font-semibold mt-4">Jane Smith</p>
+          <p>Logistics Manager, Global Goods</p>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <!-- JavaScript -->
+  <!-- Sign Up Section -->
+  <section id="signup" class="py-16 bg-gradient-to-r from-blue-500 to-green-400 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4">Join Us Today!</h2>
+      <p class="mb-6">Start using Digital Logistics to streamline your operations. Sign up now to get started.</p>
+      <a href="#signup-form" class="bg-white text-blue-600 px-6 py-3 rounded shadow-lg font-semibold">Sign Up</a>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="py-16 bg-gray-100 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4">Already a User? Login</h2>
+      <p class="mb-6">Log in to your account and get back to managing your logistics operations.</p>
+      <a href="#login-form" class="bg-blue-600 text-white px-6 py-3 rounded shadow-lg font-semibold">Login</a>
+    </div>
+  </section>
+
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const btn = document.getElementById('menu-btn');
-      const menu = document.getElementById('mobile-menu');
-      btn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-      });
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
     });
   </script>
 </body>
